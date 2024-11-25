@@ -2,7 +2,7 @@
 producto = {'pan':1.4, 'huevos':2.30, 'cebolla':0.85, 'aceite':4.30}
 compra = input('¿Que quieres comprar? ')
 if compra in producto.keys():
-    cantidad = input('¿Cuanta cantidad quieres comprar? ')
+    cantidad = int(input('¿Cuanta cantidad quieres comprar? '))
     print('Vas a tener que pagar', producto.get(compra) * cantidad, '€')
 else:
     print('No tenemos existencias de ese producto')
